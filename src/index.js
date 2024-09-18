@@ -14,10 +14,15 @@ function generatePoem(event) {
   let searchBar = document.querySelector("#user-search");
   apiKey = "14316t5bdf40359dao24118cb372909f";
   prompt = `User instructions: Generate poems about ${searchBar.value}`;
-  context = "You are a romantic poem expert and love writing short poems. Your mission is to generate a 4 line poem and make sure the seperate each ;ine with <br />. Make sure to ufollow the user instructions";
+  context =
+    "You are a romantic poem expert and love writing short poems. Your mission is to generate a 4 line poem and make sure the seperate each ;ine with <br />. Make sure to ufollow the user instructions";
   apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  
-  console.log("Generatin Poem...")
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳Generating Poem about ${searchBar.value} </div`;
+
+  console.log("Generatin Poem...");
   console.log(`prompt: ${prompt}`);
   console.log(`context: ${prompt}`);
 

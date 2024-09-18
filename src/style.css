@@ -18,9 +18,14 @@ h1 {
   text-align: center;
 }
 
+
 form{
   display: flex;
-  padding: 30px;
+}
+
+.form-container{
+   margin-bottom: 30px;
+   padding: 15px;
 }
 
 .container {
@@ -49,6 +54,13 @@ form{
   width: 150px;
 }
 
+.poem-example{
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: 0.6;
+}
+
 .poem{
   font-size: 16px;
   background-color: #e1c4f541;
@@ -59,8 +71,27 @@ form{
   box-shadow: 0px 4px 10px #3e19572f;
 }
 
+.hidden{
+  display: none;
+}
+
 footer{
   font-size: 13px;
   margin-top: 30px;
   text-align: center;
+}
+
+.generating {
+   animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
