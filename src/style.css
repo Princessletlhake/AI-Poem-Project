@@ -1,3 +1,66 @@
-body{
+body {
+  background-color: #feeafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  color: #9bb1ff;
+}
+
+header{
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  padding: 30px;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+.search-input{
+ padding: 13px;
+ background-color: rgba(255, 224, 255, 0.783);
+ border: 2px solid #ff758eac;
+ border-radius: 50px;
+ font-size: 16px;
+ width: 80%;
+}
+
+.submit-button{
+  margin-left: 10px;
+  background-color: #ff99c8;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 24px;
+  width: 150px;
+}
+
+.poem{
+  font-size: 16px;
+  background-color: #e1c4f541;
+  padding: 20px;
+  line-height: 24px;
+  border-left: 2px solid #ff758f;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #3e19572f;
+}
+
+footer{
+  font-size: 13px;
+  margin-top: 30px;
   text-align: center;
 }
